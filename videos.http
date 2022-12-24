@@ -1,0 +1,26 @@
+@api = http://localhost:3000
+
+
+
+GET {{api}}/videos
+
+### 
+
+GET {{api}}/videos/1
+
+### CREATE A VIDEO
+POST {{api}}/videos
+Content-Type: application/json
+{
+   "url": "https://www.youtube.com/watch?v=IQEDu8SPHao&list=RDIQEDu8SPHao&start_radio=1",
+   "title": "BHAAG DK BOSE I DELHI BELLY I RAM SAMPATH",
+   "description": "This is a rock video"
+}
+
+###
+
+DELETE {{api}}/videos/1
+
+###
+
+PUT {{api}}/videos/1
